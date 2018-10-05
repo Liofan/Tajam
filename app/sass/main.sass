@@ -1,0 +1,241 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+body 
+    height: 100%
+    margin: 0
+    padding: 0
+    
+.header 
+    height: 100vh    
+    background: url(../img/header/bg.png) center center
+    background-size: cover
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    flex-direction: column
+    align-items: center
+    
+    .menu
+        &-logo
+            margin-top: 26px
+            a
+                color: #ffffff
+             
+                
+        &-list
+             margin-top: 36px
+             display: -webkit-flex
+             display: -moz-flex
+             display: -ms-flex
+             display: -o-flex
+             display: flex
+             list-style: none
+             
+             &__elem a
+                margin-left: 18px
+                color: #ffffff
+                font-family: 'Roboto'
+                font-size: 13px
+                font-weight: 400
+                text-transform: uppercase
+                letter-spacing: 0.33px
+            
+    &-content
+        text-align: center
+        margin-top: 200px
+        &__title
+            color: #ffffff
+            font-family: "Playfair Display"
+            font-size: 32px
+            font-weight: 400
+            letter-spacing: 0.32px
+            margin-bottom: 52px
+            
+        &__text
+            color: #ffffff
+            font-family: Roboto
+            font-size: 14px
+            font-weight: 300
+            line-height: 24px
+            letter-spacing: 0.7px
+            margin-bottom: 50px
+    
+.button
+    cursor: pointer
+    color: #00e0d0
+    font-family: "Hammersmith One"
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+    border: 1px solid #00e0d0
+    background-color: transparent
+    padding: 10px
+        
+// END HEADER
+
+
+.store
+    
+    &-img
+        margin-top: 70px
+    
+    &-text
+        .button
+            margin-bottom: 70px
+        &__title
+            color: #413d4b
+            font-family: "Playfair Display"
+            font-size: 22px
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 1.1px
+            margin: 71px 0 28px 0
+        &__desc
+            margin-bottom: 38px
+            
+// END STORE
+
+.video
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    height: 550px
+    background: url(../img/content/video/video-bg.png) no-repeat center center
+    background-size: cover
+    &-play
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        align-items: center
+        &__clik
+            
+        &__text
+            margin-top: 34px
+            color: #ffffff
+            font-family: "Roboto"
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.8px
+
+// END VIDEO
+
+.title
+    color: #413d4b
+    font-family: "Playfair Display"
+    font-size: 22px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 1.1px
+        
+.subtitle
+    color: #413d4b
+    margin-bottom: 68px
+.expertise
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    margin: 72px 68px
+
+        
+    &-block
+        padding: 0
+        &:after
+        content: ''
+        border-right: 1px solid #ebebeb
+        border-bottom: 1px solid #ebebeb
+        height: 250px
+        &__icon
+            margin-bottom: 35px
+            min-width: 50px
+            min-height: 50px
+        &__title
+            margin-bottom: 25px
+        &__desc
+            margin-bottom: 39px
+.blockZ
+    border-right: none
+        // Убирает линии. другим способом у меня не заработал.
+.bn
+    border-bottom: none
+    .expertise-block__icon
+        padding-top: 50px
+
+//END 
+
+.team
+    color: #ffffff
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    background: url(../img/content/team/team-bg.png) center center no-repeat
+    background-size: cover
+    .button
+        margin-bottom: 69px
+    .title
+        color: #ffffff
+        margin: 71px 0 16px 0
+    .subtitle
+        color: #ffffff
+    &-block
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        margin-bottom: 70px
+    &-text
+        margin-bottom: 26px
+
+//END TEAM
+
+
+.works
+    
+    .title
+    
+    &-link
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-direction: column
+        li
+            list-style: none
+            flex-direction: column
+        &__items
+            list-style: none
+        
+        
+    
+
+
+@import "media" // Always at the end

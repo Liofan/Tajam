@@ -1,0 +1,21 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+header
+
+
+
+
+
+
+@import "media"; // Always at the end
